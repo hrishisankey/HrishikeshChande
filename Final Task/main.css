@@ -1,0 +1,251 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#count{
+  color: #409443;
+}
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+}
+.nav{
+    padding: 1px;
+    margin: 0%;
+    background-color: #03A9F4;
+    color: white;
+    position: sticky;
+}
+.heading{
+    margin-left:60px;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.shadow{
+    box-shadow: 0px 0px 4px 4px #bdbdbdc9;
+}
+.container-form{
+    display: flex;
+    flex-direction: row;
+    /* background-color: gold; */
+    width: 80%;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding: 15px 40px 15px 40px;
+    width: 50%;
+    border-radius: 20px;
+}
+.container-detail{
+    width: 100%;
+    padding: 0 10px 0 10px;
+    /* background-color: green; */
+}
+.inputstyle{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 13px 0 0 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin: 20px 10px 10px 10px;
+}
+.btn-success{
+    background-color: #4CAF50;
+}
+.btn-danger{
+    background-color: #DC3545;
+}
+.btn-success:hover{
+    background-color: #409443;
+}
+.btn-danger:hover{
+    background-color: #c0303e;
+}
+.ErrorColor{
+    color: #FF5252;
+    text-align: end;
+    margin: -1% 0 -0% 0;
+    display: block;
+}
+.displayHide{
+    display: none;
+}
+.btn-delete{
+  padding: 5px;
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 0px;
+}
+
+@media(max-width:810px){
+    .heading{
+        text-align: center;
+        margin-left:0px;
+    }
+    .container-flex{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 4%;
+    }
+    .container-detail{
+        width: 100%;
+        padding: 0;
+        /* background-color: green; */
+    }
+    .container-form{
+    display: flex;
+    flex-direction: row;
+    /* background-color: gold; */
+    width: 100%;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+    .form-field{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        padding: 40px;
+        width: 70%;
+    }
+    .btn{
+        margin: 20px 10px 10px 10px;
+    }
+    .btn-delete{
+      padding: 5px;
+      width: 50%;
+      height: 30px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      margin: 0px;
+    }
+}
+
+
+
+.px-3{
+    padding: 10px 0 10px 0;
+}
+.table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  .table th,
+  .table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  .table th {
+    text-transform: uppercase;
+    background-color: #B3E5FC;
+  }
+  .table tr:nth-child(even){
+    background-color: #e4e4e49f;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .table {
+      border: 0;
+    }
+    
+    .table thead {
+      border: none;
+      /* clip: rect(0 0 0 0); */
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+    }
+    
+    .table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .table td:last-child {
+      border-bottom: 0;
+    }
+    .table tr:nth-child(even){
+      background-color: #fafafa9f;
+    }
+  }
+  
+  #iderror,#nameerror,#ageerror,#gendererror,#finalerror{
+    color: red;
+    text-align: end;
+    display: block;
+        }
+        #finalerror{
+          color:#4CAF50;
+          text-align: center;
+          display: block;
+        }
+  
+  
+  
+  
+  
+  
+  

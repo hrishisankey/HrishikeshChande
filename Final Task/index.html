@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Task</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="validation.js"></script>
+</head>
+<body onload="displayEmpDetail();">
+    <nav class="nav shadow">
+        <h1 class="text-left heading">Employee Registration</h1>
+    </nav>
+    <div class="container-flex">
+        <div class="container-form">
+            <form method="post" action="" class="form-field shadow" id="addEmpForm">
+                <h2 class="text-left">Enter Employee Details</h2>
+                <input type="text" placeholder="Employee ID" id="id" class="inputstyle" required>
+                <p class="ErrorColor displayHide" id="iderror"></p>
+                <input type="text" placeholder="Employee Name" id="name" class="inputstyle" required>
+                <p class="ErrorColor displayHide" id="nameerror"></p>
+                <input type="text" placeholder="Employee Age" id="age" class="inputstyle" required>
+                <p class="ErrorColor displayHide" id="ageerror"></p>
+                    <select class="inputstyle" name="gender" id="gender" required>
+                      <option value="-1">Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                <p class="ErrorColor displayHide" id="gendererror"></p>
+                    <!-- <h4 id="finalerror"></h4> -->
+                <div class="form-btn">
+                    <input type="button" value="Submit" class="btn btn-success" onclick="validate()">
+                    <input type="Reset" value="Reset" class="btn btn-danger">
+                </div>
+            </form>
+        </div>
+        <div class="container-detail">
+            <table class="table" id="result">
+                <h2 class="heading text-center px-3">Employee Details</h2>
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody class="tdody" id="tdody">
+                </tbody>
+              </table>
+              <h4>Count of Employee: <span id="count"></span></h5>
+        </div>
+    </div>
+</body>
+</html>
