@@ -34,9 +34,9 @@ end
 
 exec alloperation @queryType='select';
 
-exec alloperation @queryType='insert' @name='hrishi',@available='1',@availabledate='2022-3-12',@address='vashi',@contact=7895461231,@email='hrishi@gmail.com';
+exec alloperation @queryType='insert', @name='hrishi',@available='1',@availabledate='2022-3-12',@address='thane',@contact=7895461231,@email='hrishi@gmail.com';
+
+exec alloperation @queryType='update', @email='hrishi@gmail.com', @address='cst'
 
 exec alloperation @queryType='delete', @email='hrishi@gmail.com'
-
-exec alloperation @queryType='update', @email='om@gmail.com', @address='cst'
 
