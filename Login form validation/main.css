@@ -1,0 +1,144 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 790px;
+}
+.div1{
+    width: 100%;
+    height: 100%;
+}
+.hideimg{
+    width: 100%;
+    height: 100%;
+}
+.div2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    /* background-color: rgb(255, 239, 239); */
+    width: 60%;
+    height: 70%;
+    margin-left: 20%;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.divsub1{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    margin-top: -1px;
+    font-weight: 700;
+    font-size: 30px;
+}
+label{
+    margin-top: 2%;
+}
+.inputstyle{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=button] {
+    width: 100%;
+    background-color: #04C35C;
+    font-weight: 700;
+    color: white;
+    padding: 20px 20px;
+    margin: 30px 0 17px 0;
+    border: none;
+    border-radius: 4px;
+  }
+  button[type=button] {
+      width: 100%;
+      background-color: #2D3748;
+      font-weight: 700;
+      color: white;
+      padding: 20px 20px;
+      border: none;
+      border-radius: 4px;
+    }
+  
+  input[type=button]:hover {
+    background-color: #04a04d;
+  }
+  button[type=button]:hover{
+    background-color: #1b212c;
+  }
+  .divsub11{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+  input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    /* margin:-1px 4px 0 0; */
+    vertical-align:middle;
+    /* background:url(check_radio_sheet.png) -38px top no-repeat; */
+    /* cursor:pointer; */
+}
+.col1{
+    width: 50%;
+}
+.col2{
+    width: 50%;
+    text-align: end;
+}
+.link{
+    text-decoration: none;
+}
+.googleIcon{
+    display:inline-block;
+    width: 4%;
+    vertical-align:middle;
+}
+.divsub2{
+    text-align: center;
+}
+#emailError,#passError{
+    color: red;
+    text-align: end;
+    margin-top: -2%;
+    display: block;
+}
+@media screen and (max-width: 890px) {
+    .div1 {
+      display: none;
+    }
+    .from{
+        width: 90%;
+        height: 85%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+}
+/* @media screen and (max-width: 450px) {
+    .div1 {
+      display: none;
+    }
+    .from{
+        width: 90%;
+        height: 85%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+} */

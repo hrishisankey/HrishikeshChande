@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="div1 ">
+            <img src="main1.PNG" class="hideimg"  alt="main image"></div>
+        <div class="div2">
+            <div class="divsub1">
+                <form action="#" method="post" name="login">
+                    <div class="form">
+                        <label >Welcome back</label>
+                        <h2 class="login">Login to your account</h2>
+                        <label>Email</label>
+                        <input type="email" placeholder="abc@gmail.com" class="inputstyle" required id="email">
+                        <p id="emailError"></p>
+                        <label>Password</label>
+                        <input type="password" placeholder="********" class="inputstyle" required id="password">
+                        <p id="passError"></p>
+        
+                        <div class="divsub11">
+                            <div class="col1">
+                                <input type="radio" name="myradio" value="remember"  id="remember" >
+                                <label >Remember me</label>
+                            </div>
+                            <div class="col2">
+                                <a href="" target="_blank" class="link">Forget Password?</a>
+                            </div>
+                        </div>
+
+                        <input type="button" value="Login Now" onclick="submit_by_tag()">
+                        <button type="button" value="Or sign-in with google">
+                            <img src="icon.png" class="googleIcon">&nbsp; Or sing-in with google</button>
+                    </div>
+                </form>
+            </div>
+            <div class="divsub2">
+                    <p>Dont have an account? <a href="" target="_blank" class="link">Join free today</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  </style>
+
+</head>
+
+<body onload="getval()">  
+  <!-- <img src="loader.png" class="load" style="width: 50px; height: 50px; display: none;"> -->
+  <h1 id="title"></h1>  
+  <table id="table">   
+    <thead>    
+      <tr>     
+        <th>Name</th>    
+        <th>Office</th>     
+        <th>Position</th>     
+        <th>Salary</th>    
+      </tr>   
+    </thead>   
+    <tbody id="tableBody">      
+
+    </tbody>  
+  </table> 
+  <script src="apifetch.js"></script>
+</body>
+
+</html>
